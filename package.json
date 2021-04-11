@@ -1,0 +1,37 @@
+{
+    "name": "panda-board",
+    "version": "1.0.0",
+    "description": "== Dependencies == npm: ``sudo apt install npm``",
+    "main": "index.js",
+    "dependencies": {
+        "@david.kucsai/react-pdf-table": "^0.3.0",
+        "@react-pdf/renderer": "^1.6.8",
+        "concurrently": "^5.1.0",
+        "file-saver": "^2.0.2",
+        "pubsub-js": "^1.9.0",
+        "react-contenteditable": "^3.3.3",
+        "react-fade-in": "^1.0.0",
+        "react-select": "^3.1.0",
+        "run": "^1.4.0",
+        "string-similarity": "^4.0.1",
+        "use-force-update": "^1.0.7",
+        "uuid": "^8.3.0",
+        "uuidv4": "^6.2.3"
+    },
+    "devDependencies": {
+        "react-beautiful-dnd": "^13.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client": "cd Client && npm start",
+        "server": "cd Server && npm start",
+        "start": "concurrently --kill-others \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@bitbucket.tomtomgroup.com:7999/cspsa/panda-board.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
